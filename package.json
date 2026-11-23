@@ -1,0 +1,4 @@
+{"name":"sobrevivente-android","version":"1.0.0","private":true,
+"scripts":{"setup":"npm i && node scripts/prepare.js && npx cap add android && node scripts/patch-android.js && npx cap sync android",
+"apk":"node scripts/prepare.js && npx cap sync android && cd android && ./gradlew assembleDebug"},
+"dependencies":{"@capacitor/android":"^6.1.0","@capacitor/cli":"^6.1.0","@capacitor/core":"^6.1.0","three":"0.128.0"}}
